@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio do Mecânico</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Desafio do Mecânico</h1>
+
+    <!-- Seleção de carro -->
+    <div id="car-selection">
+        <label>Fabricante:</label>
+        <select id="manufacturer"></select>
+        <label>Modelo:</label>
+        <select id="model"></select>
+        <label>Ano:</label>
+        <select id="year"></select>
+        <button id="startQuiz">Iniciar Quiz</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz" class="hidden">
+        <div id="question"></div>
+        <div id="answers"></div>
+        <button id="nextBtn" class="hidden">Próxima</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- Simulador de placa -->
+    <div id="plate-simulator">
+        <label>Digite a placa:</label>
+        <input type="text" id="plateInput">
+        <button id="checkPlate">Consultar</button>
+        <div id="plateResult"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
